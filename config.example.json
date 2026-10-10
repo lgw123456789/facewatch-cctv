@@ -1,0 +1,11 @@
+{
+  "stream_url": "rtsp://127.0.0.1:8554/xiaomi_cam",
+  "camera_name": "Front door",
+  "telegram_bot_token": "PASTE_YOUR_BOT_TOKEN",
+  "telegram_chat_id": "PASTE_YOUR_CHAT_ID",
+  "device": "cpu",
+  "detector": "auto",
+  "notify_unknown": true,
+  "notify_known": false,
+  "camera_autostart": false
+}

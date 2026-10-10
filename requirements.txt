@@ -1,0 +1,12 @@
+opencv-python>=4.8
+numpy
+requests
+pyyaml
+ultralytics
+fastapi
+uvicorn
+python-multipart
+websockets
+openvino>=2024.0
+nncf
+cryptography

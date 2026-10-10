@@ -1,0 +1,25 @@
+# Copy this file to go2rtc.yaml (next to go2rtc.exe), then:
+#
+# 1. Run go2rtc.exe and open http://localhost:1984
+# 2. Add -> Xiaomi, and log in with your Mi Home account. Pick the same server region as your Mi Home app.
+#    go2rtc writes the login into go2rtc.yaml by itself (a "xiaomi:" section appears).
+# 3. Your cameras are listed with a xiaomi://... link. Paste your camera's link below in place of
+#    PASTE_FROM_WEBUI and restart go2rtc.
+# 4. Click "stream" next to xiaomi_cam on the go2rtc page. You should see live video.
+#
+# The link looks like this (yours has different numbers):
+#   xiaomi://1234567890:sg@192.168.1.123?did=9876543210&model=chuangmi.camera.xxxx
+# Add &subtype=3 for the camera's full quality (2K on most models), or &subtype=hd if the video breaks up.
+#
+# After logging in, this file holds a login token for your Mi account. Never share it or commit it.
+
+# Only this computer can reach go2rtc. Phones use the FaceWatch app, which has its own login.
+api:
+  listen: "127.0.0.1:1984"
+rtsp:
+  listen: "127.0.0.1:8554"
+
+streams:
+  xiaomi_cam: PASTE_FROM_WEBUI
+  # Left empty on purpose: Talk sends the phone's microphone here.
+  talk:
